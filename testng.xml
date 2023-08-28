@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/pava/IdeaProjects/Final_RPP/src/test_data/test.java"><classes><class name="test_data.test"><methods><include name="login_valid"/><include name="calendar"/><include name="merchant_summary"/><include name="rows_validation"/></methods></class></classes></test></suite>
