@@ -9,7 +9,7 @@ import pages_code.pages;
 import java.util.List;
 import java.util.Properties;
 
-public class FPX_Transaction extends Merchant_summary {
+public class FPX_Transaction extends Common {
     @Test(priority = 1)
     void access()
     {
@@ -25,13 +25,6 @@ public class FPX_Transaction extends Merchant_summary {
         jsExecutor.executeScript("arguments[0].click();", obj2.Fpx_main);
         jsExecutor.executeScript("arguments[0].click();", obj2.fpx_summary);
         calendar();
-
-    }
-    @Test(priority = 3)
-    void rows_validation_1()
-    {
-        pages obj2 = new pages(driver);
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("window.scrollBy(0, 800);");
         List<WebElement> rows = driver.findElements(By.xpath("//tbody[@id=\"prodReportTable\"]/tr"));
         String actual_rows = String.valueOf(rows.size());
@@ -44,5 +37,6 @@ public class FPX_Transaction extends Merchant_summary {
         }
 
     }
+
 
 }
