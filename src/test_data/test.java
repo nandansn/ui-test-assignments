@@ -1,5 +1,5 @@
 package test_data;
-import browser_launch.launch;
+import browser_launch.Launch;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
@@ -14,7 +14,7 @@ public class test {
 
     public WebDriver driver;
     public Properties prop;
-    launch obj1 = new launch();
+    Launch obj1 = new Launch();
 
     @BeforeClass
     void before_class() {
