@@ -12,7 +12,7 @@ public class launch {
     public static Properties prop;
     static {
         try {
-            FileInputStream stream = new FileInputStream("C:\\Users\\pava\\IdeaProjects\\POM_Existing\\src\\add.properties");
+            FileInputStream stream = new FileInputStream("C:\\Users\\pava\\IdeaProjects\\Final_RPP\\src\\add.properties");
             prop = new Properties();
             prop.load(stream);
             String Browser = prop.getProperty("browser");

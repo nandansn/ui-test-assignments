@@ -27,11 +27,11 @@ public class pages {
     public WebElement summary;
     @FindBy(xpath = "//input[@id=\"from\"]")
     public WebElement calender_1;
-    @FindBy(xpath = "//button[@data-day=\"1\"]")
+    @FindBy(xpath = "//button[@data-day=\"8\"]")
     public WebElement from_date;
     @FindBy(xpath = "//input[@class=\"datepicker\"]")
     public WebElement calender_2;
-    @FindBy(xpath = "(//button[@data-day=\"30\"])[2]")
+    @FindBy(xpath = "(//button[@data-day=\"9\"])[2]")
     public WebElement to_date;
     @FindBy(xpath = "(//button[contains(text(),\"Ok\")])[1]")
     public WebElement ok_1;
@@ -41,6 +41,10 @@ public class pages {
     public WebElement search;
     @FindBy(xpath = "//select[@name=\"data_list_table_length\"]")
     public WebElement dropdown;
+    @FindBy(xpath = "(//span[contains(text(),\"FPX\")])[1]")
+    public WebElement Fpx_main;
+    @FindBy(xpath = "(//span[contains(text(),\"FPX\")])[3]")
+    public WebElement fpx_summary;
 
 
 
