@@ -1,4 +1,4 @@
-package browser_launch;
+package launch;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,12 +7,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class launch {
+public class PreauthLaunching {
     public static WebDriver driver;
     public static Properties prop;
     static {
         try {
-            FileInputStream stream = new FileInputStream("C:\\Users\\pava\\IdeaProjects\\POM_Existing\\src\\add.properties");
+            FileInputStream stream = new FileInputStream("C:\\Users\\karuna\\IdeaProjects\\Pre_Auth\\src\\preeauth.properties");
             prop = new Properties();
             prop.load(stream);
             String Browser = prop.getProperty("browser");
@@ -25,9 +25,9 @@ public class launch {
                 driver = new ChromeDriver(op);
             }
 
-        } catch (Exception a) {
+        }
+        catch (Exception a) {
             a.printStackTrace();
         }
-
     }
 }
